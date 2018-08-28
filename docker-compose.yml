@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  matemafie:
+    build: .
+    labels:
+      traefik.port: 80
+      traefik.frontend.rule: "Host: matemafie.ibmurai.info"
+      traefik.enable: true
